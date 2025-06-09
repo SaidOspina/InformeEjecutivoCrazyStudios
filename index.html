@@ -16,10 +16,6 @@
             <div class="subtitle">Aplicativo Web para Empresa de Marketing - Crazy Studios</div>
             <div class="project-info">
                 <div class="info-card">
-                    <div class="label">IDENTIFICACIÓN</div>
-                    <div class="value">FP21BSC</div>
-                </div>
-                <div class="info-card">
                     <div class="label">FECHA DE CORTE</div>
                     <div class="value">04 de Junio, 2025</div>
                 </div>
@@ -47,11 +43,11 @@
                         <div class="metric-label">Requerimientos</div>
                     </div>
                     <div class="metric">
-                        <div class="metric-value">100%</div>
+                        <div class="metric-value">18</div>
                         <div class="metric-label">Funcionales</div>
                     </div>
                     <div class="metric">
-                        <div class="metric-value">100%</div>
+                        <div class="metric-value">08</div>
                         <div class="metric-label">No Funcionales</div>
                     </div>
                 </div>
@@ -87,15 +83,16 @@
                 <!-- Video Demo -->
                 <div class="video-container">
                     <div class="resource-title">🎥 VIDEO DEMOSTRACIÓN</div>
-                    <div class="video-placeholder">
-                        <div>
-                            <div style="font-size: 2rem; margin-bottom: 10px;">📹</div>
-                            <div>Insertar enlace de YouTube aquí</div>
-                            <input type="url" placeholder="https://www.youtube.com/watch?v=..." 
-                                   style="width: 300px; padding: 10px; margin-top: 15px; border-radius: 8px; border: 1px solid rgba(0, 162, 255, 0.3); background: rgba(0, 0, 0, 0.3); color: white;">
+                    <div style="background: rgba(0, 0, 0, 0.5); border: 2px solid rgba(0, 162, 255, 0.3); border-radius: 15px; padding: 20px; margin: 15px 0;">
+                        <!-- INSERTAR IFRAME DE YOUTUBE AQUÍ -->
+                        <!-- Ejemplo: <iframe width="100%" height="450" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe> -->
+                        <div style="text-align: center; color: #7bb3f0; padding: 40px;">
+                            <iframe width="620" height="400" src="https://www.youtube.com/embed/rwl5lff-BFI?si=HcJnpdb6MYn0SkP5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
+                        
+                
 
                 <!-- Documentation -->
                 <div class="resource-card">
@@ -103,8 +100,11 @@
                     <p style="color: #b0c4de; margin-bottom: 15px;">
                         Guía completa para el uso del dashboard administrativo
                     </p>
-                    <input type="file" accept=".pdf" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 8px; border: 1px solid rgba(0, 162, 255, 0.3); background: rgba(0, 0, 0, 0.3); color: white;">
-                    <button class="resource-link">📄 Subir Manual</button>
+                    <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 162, 255, 0.3); border-radius: 10px; padding: 15px; text-align: center;">
+                        <!-- INSERTAR ENLACE AL MANUAL DE ADMINISTRADOR AQUÍ -->
+                        <div style="color: #7bb3f0; margin-bottom: 10px;">📄 Manual_Administrador.pdf</div>
+                        <a href="documents/Manual_Usuario_Administrador.pdf" target="_blank" class="resource-link" style="display: inline-block;">📖 Ver Manual</a>
+                    </div>
                 </div>
 
                 <div class="resource-card">
@@ -112,52 +112,71 @@
                     <p style="color: #b0c4de; margin-bottom: 15px;">
                         Guía de usuario para clientes del sistema
                     </p>
-                    <input type="file" accept=".pdf" style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 8px; border: 1px solid rgba(0, 162, 255, 0.3); background: rgba(0, 0, 0, 0.3); color: white;">
-                    <button class="resource-link">📄 Subir Manual</button>
+                    <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 162, 255, 0.3); border-radius: 10px; padding: 15px; text-align: center;">
+                        <!-- INSERTAR ENLACE AL MANUAL DE CLIENTE AQUÍ -->
+                        <div style="color: #7bb3f0; margin-bottom: 10px;">📄 Manual_Cliente.pdf</div>
+                        <a href="documents/Manual_Usuario_Cliente.pdf" target="_blank" class="resource-link" style="display: inline-block;">👥 Ver Manual</a>
+                    </div>
                 </div>
 
                 <!-- Database -->
                 <div class="resource-card">
-                    <div class="resource-title">🗄️ BASE DE DATOS</div>
+                    <div class="resource-title">🗄️ BASE DE DATOS MONGODB</div>
                     <p style="color: #b0c4de; margin-bottom: 15px;">
                         Conexión a MongoDB Atlas
                     </p>
-                    <input type="url" placeholder="mongodb+srv://..." 
-                           style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 8px; border: 1px solid rgba(0, 162, 255, 0.3); background: rgba(0, 0, 0, 0.3); color: white;">
-                    <button class="resource-link">🔗 Acceder a DB</button>
+                    <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 162, 255, 0.3); border-radius: 10px; padding: 15px;">
+                        <!-- INSERTAR ENLACE A MONGODB AQUÍ -->
+                        <div style="color: #7bb3f0; font-size: 0.9rem; word-break: break-all; margin-bottom: 10px;">
+                            https://cloud.mongodb.com/v2/682abf23ac6e2967deb43d62#/metrics/replicaSet/682ac068722ecb79b899fda1/explorer/crazy_studios_db/appointments/find
+                        </div>
+                        <a href="https://cloud.mongodb.com/v2/682abf23ac6e2967deb43d62#/metrics/replicaSet/682ac068722ecb79b899fda1/explorer/crazy_studios_db/appointments/find" target="_blank" class="resource-link" style="display: inline-block;">🗄️ Acceder a DB</a>
+                    </div>
                 </div>
 
                 <!-- GitHub Repository -->
                 <div class="resource-card">
-                    <div class="resource-title">⚙️ REPOSITORIO DESPLIEGUE</div>
+                    <div class="resource-title">⚙️ REPOSITORIO GITHUB</div>
                     <p style="color: #b0c4de; margin-bottom: 15px;">
                         Código fuente y configuración de despliegue
                     </p>
-                    <input type="url" placeholder="https://github.com/..." 
-                           style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 8px; border: 1px solid rgba(0, 162, 255, 0.3); background: rgba(0, 0, 0, 0.3); color: white;">
-                    <button class="resource-link">🐙 Ver en GitHub</button>
+                    <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 162, 255, 0.3); border-radius: 10px; padding: 15px;">
+                        <!-- INSERTAR ENLACE A GITHUB AQUÍ -->
+                        <div style="color: #7bb3f0; font-size: 0.9rem; word-break: break-all; margin-bottom: 10px;">
+                            🐙 https://github.com/SaidOspina/CrazyStudiosPage.git
+                        </div>
+                        <a href="https://github.com/SaidOspina/CrazyStudiosPage.git" target="_blank" class="resource-link" style="display: inline-block;" >💻 Ver Repositorio</a>
+                    </div>
                 </div>
 
                 <!-- Render Deployment -->
                 <div class="resource-card">
-                    <div class="resource-title">🚀 DESPLIEGUE RENDER</div>
+                    <div class="resource-title">☁️ PANEL RENDER</div>
                     <p style="color: #b0c4de; margin-bottom: 15px;">
                         Panel de administración del despliegue
                     </p>
-                    <input type="url" placeholder="https://dashboard.render.com/..." 
-                           style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 8px; border: 1px solid rgba(0, 162, 255, 0.3); background: rgba(0, 0, 0, 0.3); color: white;">
-                    <button class="resource-link">☁️ Panel Render</button>
+                    <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 162, 255, 0.3); border-radius: 10px; padding: 15px;">
+                        <!-- INSERTAR ENLACE A RENDER DASHBOARD AQUÍ -->
+                        <div style="color: #7bb3f0; font-size: 0.9rem; margin-bottom: 10px;">
+                            🚀 https://dashboard.render.com/web/srv-d0lcckvfte5s739ck2dg
+                        </div>
+                        <a href="https://dashboard.render.com/web/srv-d0lcckvfte5s739ck2dg" target="_blank" class="resource-link" style="display: inline-block;">☁️ Panel Render</a>
+                    </div>
                 </div>
 
                 <!-- Live Application -->
                 <div class="resource-card">
-                    <div class="resource-title">🌐 APLICATIVO EN VIVO</div>
+                    <div class="resource-title">🌟 APLICATIVO EN VIVO</div>
                     <p style="color: #b0c4de; margin-bottom: 15px;">
                         Aplicación desplegada y funcionando
                     </p>
-                    <input type="url" placeholder="https://crazy-studios.onrender.com" 
-                           style="width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 8px; border: 1px solid rgba(0, 162, 255, 0.3); background: rgba(0, 0, 0, 0.3); color: white;">
-                    <button class="resource-link">🌟 Ver Aplicativo</button>
+                    <div style="background: rgba(0, 0, 0, 0.3); border: 1px solid rgba(0, 162, 255, 0.3); border-radius: 10px; padding: 15px;">
+                        <!-- INSERTAR ENLACE AL APLICATIVO DESPLEGADO AQUÍ -->
+                        <div style="color: #7bb3f0; font-size: 0.9rem; margin-bottom: 10px;">
+                            🌐 crazy-studios.onrender.com
+                        </div>
+                        <a href="https://crazystudiospage.onrender.com/" target="_blank" class="resource-link" style="display: inline-block;">🚀 Ver Aplicativo</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -246,12 +265,8 @@
                         <div class="metric-label">Req. No Funcionales</div>
                     </div>
                     <div class="metric">
-                        <div class="metric-value">100%</div>
+                        <div class="metric-value">Alta</div>
                         <div class="metric-label">Satisfacción</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">0</div>
-                        <div class="metric-label">Defectos</div>
                     </div>
                 </div>
                 <div style="margin-top: 20px; padding: 20px; background: rgba(0, 255, 136, 0.1); border: 1px solid #00ff88; border-radius: 15px; position: relative; z-index: 2;">
@@ -280,12 +295,6 @@
             <div class="conclusion-item">Mejora significativa en la experiencia del cliente</div>
             <div class="conclusion-item">Sistema escalable para crecimiento futuro de la empresa</div>
             
-            <div style="margin-top: 30px; padding: 25px; background: linear-gradient(45deg, rgba(0, 255, 136, 0.1), rgba(0, 162, 255, 0.1)); border: 2px solid #00ff88; border-radius: 20px; text-align: center; position: relative; overflow: hidden;">
-                <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, #00ff88, #00a2ff); border-radius: 20px 20px 0 0;"></div>
-                <h3 style="color: #00ff88; margin-bottom: 15px; text-shadow: 0 0 15px rgba(0, 255, 136, 0.5);">🎉 PROYECTO EXITOSO</h3>
-                <p style="color: #e0e6ed;"><strong>Calificación General: EXCELENTE</strong></p>
-                <p style="color: #b0c4de;">Cumplimiento: 100% | Calidad: Alta | Satisfacción del Cliente: Óptima</p>
-            </div>
         </div>
 
         <!-- Footer -->

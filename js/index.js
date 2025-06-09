@@ -1,19 +1,4 @@
-// Add interactive functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add click handlers for resource links
-            const resourceButtons = document.querySelectorAll('.resource-link');
-            resourceButtons.forEach(button => {
-                button.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const input = this.parentElement.querySelector('input[type="url"], input[type="file"]');
-                    if (input && input.type === 'url' && input.value) {
-                        window.open(input.value, '_blank');
-                    } else if (input && input.type === 'file') {
-                        input.click();
-                    }
-                });
-            });
-
+document.addEventListener('DOMContentLoaded', function() {
             // Animate progress bars on load
             setTimeout(() => {
                 const progressBars = document.querySelectorAll('.progress-bar');
@@ -23,18 +8,6 @@
                     bar.style.animation = 'pulse 2s infinite';
                 });
             }, 1000);
-
-            // Add file change handlers
-            const fileInputs = document.querySelectorAll('input[type="file"]');
-            fileInputs.forEach(input => {
-                input.addEventListener('change', function() {
-                    const button = this.parentElement.querySelector('.resource-link');
-                    if (this.files.length > 0) {
-                        button.textContent = '✓ Archivo Cargado';
-                        button.style.background = 'linear-gradient(45deg, #00ff88, #00cc66)';
-                    }
-                });
-            });
         });
 
         // Add custom CSS for pulse animation
